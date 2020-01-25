@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/One_Life.ogg-89f6352cc0689549bbf715536ee57b35.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/One_Life.ogg"
+dest_files=[ "res://.import/One_Life.ogg-89f6352cc0689549bbf715536ee57b35.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
