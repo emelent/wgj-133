@@ -43,8 +43,6 @@ func __stop(sound):
 	if sound:
 		print("stopping '%s'" % sound.name)
 		sound.stop()
-	print("bgm_streams %s ", bgm_streams)
-	print("sfx_streams %s ", sfx_streams)
 
 func __on_sfx_finished(sound):
 	print("sfx '%s' finished" % sound.name)
@@ -101,18 +99,18 @@ func unpauseBGM():
 		__unpause(sound)
 
 func stopSFX():
-	for sound in sfx_streams:
-		sfx_streams.erase(sound)
-		__stop(sound)
+	while sfx_streams.size() > 0:
+		__stop(sfx_streams[0])
+		sfx_streams.remove(0)
 
 	for child in SfxNodeContainer.get_children():
 		SfxNodeContainer.remove_child(child)
 	print(sfx_streams)
 
 func stopBGM():
-	for sound in bgm_streams:
-		bgm_streams.erase(sound)
-		__stop(sound)
+	while bgm_streams.size() > 0:
+		__stop(bgm_streams[0])
+		bgm_streams.remove(0)
 
 	for child in BgmNodeContainer.get_children():
 		BgmNodeContainer.remove_child(child)
