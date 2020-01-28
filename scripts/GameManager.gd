@@ -5,6 +5,7 @@ extends Node
 var scenes = {
 	"main_menu": "res://scenes/screens/MainMenu.tscn",
 	"controls_menu": "res://scenes/screens/ControlsMenu.tscn",
+	"playground": "res://scenes/levels/Playground.tscn"
 }
 
 func goToScene(name):

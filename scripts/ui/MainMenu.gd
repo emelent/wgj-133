@@ -10,4 +10,4 @@ func _on_Controls_pressed():
 
 
 func _on_Play_pressed():
-	pass # Replace with function body.
+	GameManager.goToScene("playground")
