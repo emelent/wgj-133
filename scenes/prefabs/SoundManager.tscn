@@ -84,6 +84,7 @@ stream = ExtResource( 3 )
 pitch_scale = 2.05
 
 [node name="Playing" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="SFX" type="Node2D" parent="Playing"]
 
